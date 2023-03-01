@@ -1,0 +1,590 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    height: 100%;
+}
+
+.calculate_container {
+    display: flex;
+
+    .middle_pane_calculate {
+        // @media (max-width: 1280px) {
+        overflow-y: auto;
+        height: 100vh;
+        // }
+
+        background: #F8F8F8;
+
+        .middle_pane_content {
+            background: #FFFFFF;
+            border: 0.063rem solid rgba(0, 0, 0, 0.2);
+            border-radius: 0.313rem;
+            // height: 38rem;
+            margin: 2rem;
+            display: flex;
+
+            .steps_pane {
+                @media (max-width: 500px) {
+                    display: none;
+                }
+
+                // width: 14.375rem;
+
+                .steps_pane_part {
+                    // height: 9.5rem;
+                    background: #fff;
+                    border-left: solid 0.313rem #357AFF;
+                    border-radius: 0.063rem;
+                    border-right: solid 0.125rem #D9D9D9;
+                    border-bottom: 0.063rem solid #CCCCCC;
+                    padding: 1rem 2.25rem 0.438rem;
+
+                    .steps_pane_title {
+                        font-family: 'Noto Sans';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 0.875rem;
+                        line-height: 1.188rem;
+                        color: rgba(0, 0, 0, 0.6)
+                    }
+
+                    .followers_title {
+                        font-family: 'Noto Sans';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 0.875rem;
+                        line-height: 1.188rem;
+                        color: rgba(0, 0, 0, 0.6);
+                        padding-top: 0.5rem;
+                    }
+
+                    .followers_count {
+                        font-family: 'Noto Sans';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 1.25rem;
+                        line-height: 1.688rem;
+                        color: #000000;
+                    }
+
+                    .budget_influencers_title {
+                        font-family: 'Noto Sans';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 0.875rem;
+                        line-height: 1.188rem;
+                        color: rgba(0, 0, 0, 0.6);
+                        padding-top: 0.625rem;
+                    }
+
+                    .budget_influencers_value {
+                        font-family: 'Noto Sans';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 1.25rem;
+                        line-height: 1.688rem;
+                        color: #000000;
+                        padding-left: 0.625rem;
+                    }
+
+                    .deliverables {
+                        display: flex;
+                        justify-content: space-between;
+
+                        .deliverables_value {
+                            font-family: 'Noto Sans';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 1.5rem;
+                            color: #000000;
+                        }
+
+                        .deliverables_title {
+                            font-family: 'Noto Sans';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 0.688rem;
+                            line-height: 0.938rem;
+                            max-width: 1.875rem;
+                            color: rgba(0, 0, 0, 0.6);
+                        }
+                    }
+
+                    .filter_pane {
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        padding: 0.313rem 0 0.25rem;
+
+                        .filter_value {
+                            font-family: 'Noto Sans';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 1.25rem;
+                            line-height: 1.688rem;
+                            color: #000000;
+                            padding-left: 1rem;
+                        }
+                    }
+
+                    .cost_title {
+                        padding: 1.563rem 0 0.125rem;
+                        font-family: 'Noto Sans';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 0.875rem;
+                        line-height: 1.188rem;
+                        color: rgba(0, 0, 0, 0.6);
+                    }
+
+                    .cost_title {
+                        padding: 1.563rem 0 0.125rem;
+                        font-family: 'Noto Sans';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 0.875rem;
+                        line-height: 1.188rem;
+                        color: rgba(0, 0, 0, 0.6);
+                    }
+
+                    .cost_value {
+                        padding: 0 0 1rem;
+                        font-family: 'Noto Sans';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 1.25rem;
+                        line-height: 1.688rem;
+                        color: #000000;
+                    }
+                }
+
+                .steps_pane_part_inactive {
+                    // @media (max-width: 1280px) {
+                    //     padding: 2.25rem 2.25rem;
+                    // }
+
+                    // height: 9.5rem;
+                    background: #D9D9D9;
+                    // padding: 1rem 2.25rem 0.438rem;
+                    padding: 2.25rem 2.25rem;
+                    border-left: solid 0.313rem #B6B6B6;
+                    border-radius: 0.063rem;
+                    border-right: solid 0.125rem #D9D9D9;
+                    border-bottom: 0.063rem solid #CCCCCC;
+
+                    .steps_pane_title {
+                        font-family: 'Noto Sans';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 0.875rem;
+                        line-height: 1.188rem;
+                        color: rgba(0, 0, 0, 0.6)
+                    }
+
+                    .followers_title {
+                        font-family: 'Noto Sans';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 0.875rem;
+                        line-height: 1.188rem;
+                        color: rgba(0, 0, 0, 0.6);
+                        padding-top: 0.5rem;
+                    }
+
+                    .followers_count {
+                        font-family: 'Noto Sans';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 1.25rem;
+                        line-height: 1.688rem;
+                        color: #000000;
+                    }
+
+                    .budget_influencers_title {
+                        font-family: 'Noto Sans';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 0.875rem;
+                        line-height: 1.188rem;
+                        color: rgba(0, 0, 0, 0.6);
+                        padding-top: 0.625rem;
+                    }
+
+                    .budget_influencers_value {
+                        font-family: 'Noto Sans';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 1.25rem;
+                        line-height: 1.688rem;
+                        color: #000000;
+                        padding-left: 0.625rem;
+                    }
+
+                    .deliverables {
+                        display: flex;
+                        justify-content: space-between;
+
+                        .deliverables_value {
+                            font-family: 'Noto Sans';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 1.5rem;
+                            color: #000000;
+                        }
+
+                        .deliverables_title {
+                            font-family: 'Noto Sans';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 0.688rem;
+                            line-height: 0.938rem;
+                            max-width: 1.875rem;
+                            color: rgba(0, 0, 0, 0.6);
+                        }
+                    }
+
+                    .filter_pane {
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        padding: 0.313rem 0 0.25rem;
+
+                        .filter_value {
+                            font-family: 'Noto Sans';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 1.25rem;
+                            line-height: 1.688rem;
+                            color: #000000;
+                            padding-left: 1rem;
+                        }
+                    }
+
+                    .cost_title {
+                        padding: 1.563rem 0 0.125rem;
+                        font-family: 'Noto Sans';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 0.875rem;
+                        line-height: 1.188rem;
+                        color: rgba(0, 0, 0, 0.6);
+                    }
+
+                    .cost_value {
+                        padding: 0 0 1rem;
+                        font-family: 'Noto Sans';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 1.25rem;
+                        line-height: 1.688rem;
+                        color: #000000;
+                    }
+                }
+            }
+
+            .content_pane {
+                display: flex;
+                flex-direction: column;
+                padding: 2rem 2rem;
+
+                .steps_title {
+                    font-family: 'Noto Sans';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 0.875rem;
+                    line-height: 1.188rem;
+                    color: rgba(0, 0, 0, 0.7);
+                    width: 100%;
+                }
+
+                .pane_title {
+                    font-family: 'Noto Sans';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 1.5rem;
+                    line-height: 2.063rem;
+                    color: #000000;
+                    padding-top: 0.5rem;
+                    width: 100%;
+                }
+
+                .filter_content {
+                    font-family: 'Noto Sans';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 1rem;
+                    line-height: 1.375rem;
+                    color: #000000;
+                    padding-top: 1.5rem;
+                    width: 100%;
+                }
+
+                .modal_section {
+                    @media (max-width: 600px) {
+                        width: 100%;
+                    }
+
+                    width: 21.875rem;
+
+                    .modal_option {
+                        max-height: 21.375rem;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        cursor: pointer;
+
+                        .modal_title {
+                            font-family: 'Noto Sans';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 1rem;
+                            line-height: 1.375rem;
+                            color: #000000;
+                            width: 100%;
+                        }
+
+                        .label_slider {
+                            font-family: 'Noto Sans';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 0.875rem;
+                            line-height: 1.188rem;
+                            color: RGB(0, 0, 0, 0.5);
+                            padding-top: 1rem;
+                            width: 100%;
+                        }
+
+                        .select_bar {
+                            @media (max-width: 600px) {
+                                width: 100%;
+                            }
+                        }
+
+                        .slider_dropdown {
+                            background: #FFFFFF;
+                            border: 0.063rem solid rgba(0, 0, 0, 0.5);
+                            border-radius: 0.313rem;
+                            box-sizing: border-box;
+                            height: 2.25rem;
+                            width: 16.25rem;
+                            margin-top: 1rem;
+                            font-family: 'Inter';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 1rem;
+                            line-height: 1.188rem;
+                            color: rgba(0, 0, 0, 0.4);
+                            padding-left: 0.75rem;
+                            width: 100%;
+
+                            option {
+                                font-family: 'Inter';
+                                font-style: normal;
+                                font-weight: 400;
+                                font-size: 1rem;
+                                line-height: 1.188rem;
+                                color: rgba(0, 0, 0, 0.8);
+                            }
+                        }
+
+                        .follower_silder {
+                            color: #7662DC;
+                            border-radius: 0.313rem;
+                            margin: 0;
+                            margin-top: 1rem;
+                        }
+
+                        .css-yafthl-MuiSlider-markLabel {
+                            font-size: 0.625rem;
+                        }
+
+                        .css-1eoe787-MuiSlider-markLabel {
+                            font-size: 0.625rem;
+                        }
+
+                        .css-14pt78w-MuiSlider-rail {
+                            background: #D9D9D9;
+                            border-radius: 0.313rem;
+                        }
+
+                        .css-eg0mwd-MuiSlider-thumb {
+                            background: #FFFFFF;
+                            border: 0.063rem solid RGB(0, 0, 0, 0.2);
+                            box-shadow: 0 0.063rem 0.125rem RGB(0 0 0 / 25%);
+                        }
+
+                        .followers_count,
+                        .followers_count_1 {
+                            font-family: 'Noto Sans';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 1.25rem;
+                            line-height: 1.688rem;
+                            color: rgba(0, 0, 0, 0.7);
+                            margin-top: 0.313rem;
+                        }
+
+                        input {
+                            margin: 0.75rem;
+                        }
+                    }
+                }
+
+                .content_bottom_pane {
+                    display: flex;
+                    flex-direction: column;
+                    padding-top: 2rem;
+
+                    .select_title_field {
+                        font-family: 'Noto Sans';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 1rem;
+                        line-height: 1.375rem;
+                        color: #000000;
+                    }
+
+                    label {
+                        font-family: 'Inter';
+                        font-style: normal;
+                        font-weight: 400;
+                        font-size: 1rem;
+                        line-height: 1.188rem;
+                        color: rgba(0, 0, 0, 0.8);
+                    }
+
+                    .input_box {
+                        background: #FFFFFF;
+                        border: 0.063rem solid rgba(0, 0, 0, 0.5);
+                        border-radius: 0.313rem;
+                        box-sizing: border-box;
+                        height: 2rem;
+                        width: 8.375rem;
+                        cursor: pointer;
+                    }
+                }
+
+                .error_pane {
+                    font-family: 'Inter';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 1rem;
+                    line-height: 1.188rem;
+                    color: #D72828;
+                    width: 40.625rem;
+                }
+
+                .next_btn {
+                    background: #7662DC;
+                    border-radius: 0.188rem;
+                    font-family: 'Noto Sans';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 0.75rem;
+                    line-height: 2rem;
+                    text-align: center;
+                    color: #FFFFFF;
+                    width: 7.75rem;
+                    height: 2.25rem;
+                    // margin-top: 0.25rem;
+                    cursor: pointer;
+                    margin-top: 3rem;
+                }
+            }
+
+            .right_pane {
+                @media (max-width: 900px) {
+                    display: none;
+                }
+
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+
+                .image1 {
+                    background-image: url('../../Assets/Images/calculatebg1.png');
+                    height: 45%;
+                    background-repeat: no-repeat;
+                    margin-top: 2rem;
+                    background-size: contain;
+                }
+
+                .image2 {
+                    height: 25%;
+                    background-image: url('../../Assets/Images/calculate2.png');
+                    background-repeat: no-repeat;
+                    background-size: contain;
+                    margin-top: 4rem;
+                }
+
+                .indicator {
+                    font-family: 'Noto Sans';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 0.75rem;
+                    line-height: 2rem;
+                    color: rgba(0, 0, 0, 0.3);
+                }
+            }
+        }
+    }
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+.col-lg-2 {
+    @media (min-width: 992px) {
+        -ms-flex: 0 0 16.666667%;
+        flex: 0 0 16.666667%;
+        max-width: 12.666667%;
+    }
+
+    height: 100vh;
+}
+
+// .col-md-2 {
+//     @media (min-width: 768px) {
+//         -ms-flex: 0 0 16.666667%;
+//         flex: 0 0 16.666667%;
+//         max-width: 12.666667%;
+//     }
+// }
+
+// .col-sm-2 {
+//     @media (min-width: 576px) {
+//         -ms-flex: 0 0 16.666667%;
+//         flex: 0 0 16.666667%;
+//         max-width: 12.666667%;
+//     }
+// }
+
+.col-lg-10 {
+    @media (min-width: 992px) {
+        -ms-flex: 0 0 87.333333%;
+        flex: 0 0 87.333333%;
+        max-width: 87.333333%;
+    }
+}
+
+// .col-md-10 {
+//     @media (min-width: 768px) {
+//         -ms-flex: 0 0 87.333333%;
+//         flex: 0 0 87.333333%;
+//         max-width: 87.333333%;
+//     }
+// }
+
+// .col-sm-10 {
+//     @media (min-width: 576px) {
+//         -ms-flex: 0 0 87.333333%;
+//         flex: 0 0 87.333333%;
+//         max-width: 87.333333%;
+//     }
+// }

@@ -1,0 +1,568 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    height: 100%;
+}
+
+.compare_influencers_container {
+    display: flex;
+    background: #F8F8F8;
+
+    .clear_btn_pane {
+        display: flex;
+        justify-content: flex-end;
+        padding: 0 2rem;
+
+        .clear_btn {
+            font-family: 'Noto Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 0.875rem;
+            line-height: 1rem;
+            color: #007DA8;
+            margin-top: 0.5rem;
+            cursor: pointer;
+        }
+    }
+
+    .result_pane {
+        display: flex;
+        padding: 2rem; //need to find soln
+        overflow-x: auto;
+        overflow-y: auto;
+        height: 88vh;
+
+        .results {
+            background: #FFFFFF;
+            border: 0.063rem solid rgba(0, 0, 0, 0.2);
+            border-radius: 0.313rem;
+            width: 15rem;
+            height: fit-content;
+            margin-left: 1rem;
+
+            .profile_container {
+                padding: 1rem;
+                display: flex;
+                justify-content: center;
+
+                .image {
+                    width: 10rem;
+                    height: 10rem;
+                    border-radius: 50%;
+                }
+            }
+
+            .profile_name {
+                font-family: 'Noto Sans';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 1.5rem;
+                line-height: 2.063rem;
+                text-align: center;
+                color: #000000;
+                cursor: pointer;
+                padding: 0.625rem 1rem;
+                line-break: anywhere;
+            }
+
+            .profile_username {
+                font-family: 'Noto Sans';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 0.75rem;
+                line-height: 1rem;
+                text-align: center;
+                color: rgba(0, 0, 0, 0.5);
+            }
+
+            .profile_location {
+                font-family: 'Noto Sans';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 0.875rem;
+                line-height: 1.188rem;
+                text-align: center;
+                color: rgba(0, 0, 0, 0.8);
+
+            }
+
+            .profile_category {
+                background: #4D38B9;
+                border-radius: 0.188rem;
+                font-family: 'Noto Sans';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 0.75rem;
+                line-height: 1rem;
+                text-align: center;
+                color: #FFFFFF;
+                padding: 0.625rem;
+            }
+
+            .profile_followers {
+                padding: 0.625rem 1rem;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                font-family: 'Noto Sans';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 1.25rem;
+                line-height: 1.688rem;
+                text-align: center;
+                color: #000000;
+                cursor: pointer;
+
+                svg {
+                    height: 2rem;
+                    width: 2rem;
+                }
+            }
+
+            .like_comment_box {
+                display: flex;
+                justify-content: space-evenly;
+                padding: 0.625rem;
+                align-items: center;
+                cursor: pointer;
+
+                .profile_like {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+
+                    span {
+                        font-family: 'Noto Sans';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 1rem;
+                        line-height: 1.375rem;
+                        display: flex;
+                        align-items: flex-end;
+                        text-align: center;
+                        color: #000000;
+                    }
+
+                    svg {
+                        height: 1.25rem;
+                        width: 1.25rem;
+                    }
+                }
+
+                .profile_comment {
+                    display: flex;
+                    align-items: center;
+                    flex-direction: column;
+
+                    span {
+                        font-family: 'Noto Sans';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 1rem;
+                        line-height: 1.375rem;
+                        display: flex;
+                        align-items: flex-end;
+                        text-align: center;
+                        color: #000000;
+                    }
+
+                    svg {
+                        height: 1.25rem;
+                        width: 1.25rem;
+                    }
+                }
+
+            }
+
+            .list_remove_pane {
+                cursor: pointer;
+                display: flex;
+                justify-content: space-around;
+                font-family: 'Noto Sans';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 0.875rem;
+                line-height: 1.188rem;
+                color: #007DA8;
+
+                .addList_section {
+                    max-height: 21.875rem;
+                    position: absolute;
+                    z-index: 4;
+                    padding: 0.75rem;
+                    background: #FFFFFF;
+                    border: 0.063rem solid RGB(0, 0, 0, 0.2);
+                    box-shadow: 0.125rem 0.25rem 0.25rem RGB(0 0 0 / 25%);
+                    border-radius: 0.313rem;
+                    // top: 60%;
+                    // left: 15%;
+                    bottom: 0;
+                    right: 0;
+
+                    .addList_option {
+                        max-height: 21.375rem;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        padding: 0.625rem;
+                        border-radius: 0.5rem;
+                        cursor: pointer;
+                        padding-bottom: 5rem;
+
+                        .section_dropdown_header {
+                            font-family: 'Noto Sans';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 1rem;
+                            line-height: 1.375rem;
+                            color: #000000;
+                        }
+
+                        .section_list_title {
+                            font-family: 'Noto Sans';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 0.875rem;
+                            line-height: 1.188rem;
+                            color: rgba(0, 0, 0, 0.7);
+                            margin-top: 0.5rem;
+                        }
+
+                        .list_options {
+                            font-family: 'Inter';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 1rem;
+                            line-height: 1.188rem;
+                            color: rgba(0, 0, 0, 0.8);
+                            padding-top: 0.5rem;
+                            padding-bottom: 0.5rem;
+                        }
+                    }
+                }
+            }
+
+            .recent_posts {
+                padding: 1.25rem 1rem;
+
+                .recent_posts_title {
+                    font-family: 'Noto Sans';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 0.75rem;
+                    line-height: 1rem;
+                    color: rgba(0, 0, 0, 0.6);
+                    padding: 0.5rem;
+                }
+
+                .recent_post_box {
+                    display: flex;
+                    align-items: center;
+                    padding: 0.75rem 0;
+                    justify-content: space-around;
+
+                    img {
+                        height: 6.25rem;
+                        width: 6.25rem;
+                        border-radius: 50%;
+                        object-fit: contain;
+                    }
+
+                    .profile_like,
+                    .profile_comment {
+                        display: flex;
+                        justify-content: space-between;
+                        align-items: center;
+                        padding-top: 0.75rem;
+
+                        img {
+                            height: 1.25rem;
+                            width: 1.25rem;
+                        }
+                    }
+                }
+            }
+
+        }
+
+        .add_influencers {
+            background: #EBEBEB;
+            width: 15rem;
+            height: 100vh;
+            border-radius: 0.313rem;
+            margin-left: 1rem;
+
+            .add_btn {
+                font-family: 'Noto Sans';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 8rem;
+                line-height: 10.875rem;
+                text-align: center;
+                margin-top: 12rem;
+                color: rgba(0, 0, 0, 0.4);
+                cursor: pointer;
+            }
+
+            .add_inf {
+                font-family: 'Noto Sans';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 0.875rem;
+                line-height: 1.188rem;
+                text-align: center;
+                color: rgba(0, 0, 0, 0.4);
+                cursor: pointer;
+            }
+
+            .overlay {
+                position: fixed;
+                width: 100%;
+                height: 100%;
+                top: 0;
+                z-index: 0;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                background-color: rgba(0, 0, 0, 0.5);
+                cursor: pointer;
+
+                .compare_section {
+                    position: absolute;
+                    z-index: 4;
+                    background-color: white;
+                    padding: 1rem 1.5rem;
+                    background: #FFFFFF;
+                    border: 0.063rem solid RGB(0, 0, 0, 0.2);
+                    box-shadow: 0.125rem 0.25rem 0.25rem RGB(0 0 0 / 25%);
+                    border-radius: 0.313rem;
+                    box-sizing: border-box;
+                    width: 25rem;
+                    min-height: 22.688rem;
+                    bottom: 0;
+                    right: 0;
+
+                    .close_btn {
+                        display: flex;
+                        justify-content: flex-end;
+                        cursor: pointer;
+                    }
+
+                    .compare_headers {
+                        font-family: 'Noto Sans';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 1rem;
+                        line-height: 1.375rem;
+                        color: #000000;
+                    }
+
+                    .compare_title {
+                        font-family: 'Noto Sans';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 0.875rem;
+                        line-height: 1.188rem;
+                        color: rgba(0, 0, 0, 0.7);
+                        margin-top: 1rem;
+                    }
+
+                    .compare_input {
+                        background: #FFFFFF;
+                        border: 0.063rem solid rgba(0, 0, 0, 0.5);
+                        border-radius: 0.313rem;
+                        width: 19rem;
+                        height: 2.25rem;
+                        box-sizing: border-box;
+                        margin-top: 0.5rem;
+                    }
+
+                    .suggestions {
+                        position: absolute;
+                        background: #FFFFFF;
+                        border: 0.063rem solid rgba(0, 0, 0, 0.5);
+                        border-radius: 0.313rem;
+                        z-index: 9999;
+                        width: 19rem;
+                        max-height: 9.375rem;
+                        overflow-y: auto;
+
+                        .active_inf {
+                            padding: 0.75rem;
+                            cursor: pointer;
+
+                            .sug_user {
+                                display: flex;
+                                flex-direction: row;
+                                align-items: center;
+
+                                img {
+                                    height: 2rem;
+                                    width: 2rem;
+                                    border-radius: 50%;
+                                }
+                            }
+                        }
+
+                        .non_active {
+                            padding: 0.75rem;
+                            cursor: pointer;
+
+                            .sug_user {
+                                display: flex;
+                                flex-direction: row;
+                                align-items: center;
+
+                                img {
+                                    height: 2rem;
+                                    width: 2rem;
+                                    border-radius: 50%;
+                                }
+                            }
+                        }
+                    }
+
+                    .influencers_box {
+
+                        .added_influencer {
+                            background: #D9D9D9;
+                            border-radius: 0.625rem;
+                            width: 17rem;
+                            display: flex;
+                            align-content: center;
+                            align-items: center;
+                            padding: 0.75rem;
+                            justify-content: space-between;
+                            margin-top: 0.5rem;
+                            font-family: 'Noto Sans';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 0.75rem;
+                            line-height: 1rem;
+                            color: rgba(0, 0, 0, 0.7);
+                        }
+
+                        .clear_all {
+                            font-family: 'Noto Sans';
+                            font-style: normal;
+                            font-weight: 700;
+                            font-size: 0.875rem;
+                            line-height: 1rem;
+                            color: #007DA8;
+                            margin-top: 0.5rem;
+                            cursor: pointer;
+                        }
+
+                        .btn_pane {
+                            display: flex;
+                            justify-content: space-between;
+                            margin-top: 2rem;
+                            cursor: pointer;
+
+                            .compare_influencers_btn {
+                                background: #7662DC;
+                                border-radius: 0.188rem;
+                                font-family: 'Noto Sans';
+                                font-style: normal;
+                                font-weight: 700;
+                                font-size: 0.75rem;
+                                line-height: 1rem;
+                                text-align: center;
+                                color: #FFFFFF;
+                                height: 2rem;
+                            }
+
+                            .clear_btn {
+                                background: #D7D7D7;
+                                border-radius: 0.188rem;
+                                font-family: 'Noto Sans';
+                                font-style: normal;
+                                font-weight: 700;
+                                font-size: 0.75rem;
+                                line-height: 1rem;
+                                text-align: center;
+                                color: #595959;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.inline_loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.col-lg-2 {
+    @media (min-width: 992px) {
+        -ms-flex: 0 0 16.666667%;
+        flex: 0 0 16.666667%;
+        max-width: 12.666667%;
+    }
+}
+
+// .col-md-2 {
+//     @media (min-width: 768px) {
+//         -ms-flex: 0 0 16.666667%;
+//         flex: 0 0 16.666667%;
+//         max-width: 12.666667%;
+//     }
+// }
+
+// .col-sm-2 {
+//     @media (min-width: 576px) {
+//         -ms-flex: 0 0 16.666667%;
+//         flex: 0 0 16.666667%;
+//         max-width: 12.666667%;
+//     }
+// }
+
+.col-lg-10 {
+    @media (min-width: 992px) {
+        -ms-flex: 0 0 87.333333%;
+        flex: 0 0 87.333333%;
+        max-width: 87.333333%;
+    }
+}
+
+// .col-md-10 {
+//     @media (min-width: 768px) {
+//         -ms-flex: 0 0 87.333333%;
+//         flex: 0 0 87.333333%;
+//         max-width: 87.333333%;
+//     }
+// }
+
+// .col-sm-10 {
+//     @media (min-width: 576px) {
+//         -ms-flex: 0 0 87.333333%;
+//         flex: 0 0 87.333333%;
+//         max-width: 87.333333%;
+//     }
+// }
+
+.descr_title {
+    color: rgba(0, 0, 0, .4);
+    font-family: Noto Sans;
+    font-size: .625rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: .875rem;
+    margin-top: 0.5rem;
+}
+
+.inline_loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

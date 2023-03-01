@@ -1,0 +1,165 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    height: 100%;
+}
+
+.navbar {
+    @media (max-width: 700px) {
+        align-items: flex-start;
+    }
+
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+
+    .menu-bars {
+        margin-left: 1rem;
+        // font-size: 1.5rem;
+        background: none;
+    }
+}
+
+.navbar-inactive {
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+
+    .menu-bars {
+        margin-left: 1rem;
+        font-size: 1.5rem;
+        background: none;
+    }
+}
+
+.nav-menu {
+    width: 4rem;
+    height: 100%;
+    background: #7662DC;
+    padding-top: 2rem;
+}
+
+ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start: 0;
+}
+
+.nav-menu-active {
+    width: 100%;
+    height: 100%;
+    background: #7662DC;
+    padding-top: 2rem;
+    left: 0;
+    transition: 350ms;
+}
+
+.nav-text {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+    height: 3.8rem;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.8125rem;
+    line-height: 1.25rem;
+
+    span {
+        font-size: 0.8125rem;
+    }
+
+}
+
+.nav-text:hover {
+    background: #4D38B9;
+}
+
+.nav-text a {
+    text-decoration: none;
+    color: #f5f5f5;
+    font-size: 1.25rem;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    padding: 0 1rem;
+    border-radius: 0.25rem;
+}
+
+.nav-menu-items {
+    width: 100%;
+    padding-top: 2rem;
+}
+
+.navbar-toggle {
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+span {
+    margin-left: 1rem;
+}
+
+
+.sideicon {
+    margin: 0;
+    padding: 0;
+    height: 1em;
+    width: 1em;
+}
+
+.nav-nested {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    list-style: none;
+    height: 2.8rem;
+    font-family: 'Noto Sans';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 0.8125rem;
+    line-height: 1.25rem;
+}
+
+.nav-nested:hover {
+    background: #4D38B9;
+}
+
+.nav-nested a {
+    text-decoration: none;
+    color: #f5f5f5;
+    // font-size: 1.25rem;
+    height: auto !important;
+    display: block;
+    align-items: center;
+    padding: 0 1rem;
+    border-radius: 0.25rem;
+
+    svg {
+        font-size: 1.125rem;
+    }
+}
+
+.logo {
+    width: 2.5rem;
+    margin-right: 1rem;
+}
+
+.logo_hide {
+    width: 1.8rem;
+    margin-left: 1rem;
+}

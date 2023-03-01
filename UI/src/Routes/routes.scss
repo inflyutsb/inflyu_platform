@@ -1,0 +1,16 @@
+.load_parent {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  .loaderss {
+    border: 1rem solid #f3f3f3; /* Light grey */
+    border-top: 1rem solid #53bfd2; /* Blue */
+    border-radius: 50%;
+    width: 7.5rem;
+    height: 7.5rem;
+    animation: spin 1s linear infinite;
+    
+  }
+}

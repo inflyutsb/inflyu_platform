@@ -1,0 +1,213 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    height: 100%;
+}
+
+.signup_container {
+    display: flex;
+
+    .left_pane {
+        .social_logo {
+            width: 4rem;
+            padding-top: 1.563rem;
+            padding-left: 1rem;
+        }
+
+        .signup_form {
+            @media (max-width: 1280px) {
+                padding-top: 1rem;
+            }
+
+            @media (max-width: 1000px) {
+                padding-top: 5.625rem;
+            }
+
+            @media (max-width: 460px) {
+                padding-top: 0.5rem;
+            }
+
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+            padding-top: 5.625rem;
+
+            .signup_header {
+                @media (max-width: 1000px) {
+                    font-size: 2rem;
+                }
+
+                @media (max-width: 460px) {
+                    font-size: 2rem;
+                    margin-left: 1rem;
+                }
+
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 3rem;
+                line-height: 3.625rem;
+                color: rgba(0, 0, 0, 0.8);
+                text-align: center;
+            }
+
+            .signup_title {
+                @media (max-width: 1000px) {
+                    font-size: 1rem;
+                }
+
+                @media (max-width: 460px) {
+                    font-size: 0.75rem;
+                    margin-left: 1rem;
+                }
+
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 1rem;
+                line-height: 1.188rem;
+                text-align: center;
+                color: rgba(0, 0, 0, 0.8);
+                margin-top: 0.625rem;
+            }
+        }
+
+        .input_boxes {
+            display: flex;
+            flex-direction: column;
+            align-content: center;
+            justify-content: center;
+            margin-top: 1rem;
+            margin-left: 1rem;
+
+            .registeration_fields {
+                font-family: 'Inter';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 1rem;
+                line-height: 1.188rem;
+                color: rgba(0, 0, 0, 0.4);
+                border: 0.063rem solid #808080;
+                border-radius: 0.313rem;
+                box-sizing: border-box;
+                margin-top: 0.25rem;
+                margin-bottom: 0.25rem;
+                height: 2.5rem;
+                padding: 0.5rem 1rem;
+            }
+
+            .signup_btn {
+                margin-top: 1rem;
+                background: #7662DC;
+                border-radius: 0.313rem;
+                font-family: 'Inter';
+                font-style: normal;
+                font-size: 1rem;
+                line-height: 1.188rem;
+                text-align: center;
+                color: #FFFFFF;
+                border: 0.063rem solid #808080;
+                border-radius: 0.313rem;
+                box-sizing: border-box;
+                font-weight: 700;
+                text-transform: none;
+                height: 2.2rem;
+            }
+
+        }
+
+        .login_link {
+            @media (max-width: 1280px) {
+                margin-top: 1rem;
+            }
+
+            @media (max-width: 500px) {
+                font-size: 0.7rem;
+            }
+
+            margin-top: 2rem;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 1rem;
+            line-height: 1.188rem;
+            text-align: center;
+            color: rgba(0, 0, 0, 0.8);
+        }
+
+        .social_login_btn {
+            @media (max-width: 1280px) {
+                margin-top: 0.625rem;
+            }
+
+            @media (max-width: 500px) {
+                font-size: 0.7rem;
+            }
+
+            box-sizing: border-box;
+            background: #FFFFFF;
+            display: flex;
+            text-align: center;
+            align-content: center;
+            justify-content: center;
+            align-items: center;
+            margin-top: 1.2rem;
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 500;
+            font-size: 1rem;
+            line-height: 1.5rem;
+            color: rgba(0, 0, 0, 0.4);
+        }
+
+        .signup_footer {
+            @media (max-width: 1280px) {
+                margin-top: 0.8rem;
+            }
+
+            @media (max-width: 500px) {
+                font-size: 0.5rem;
+            }
+
+            margin-top: 1.6rem;
+            font-family: 'Inter';
+            font-style: normal;
+            font-weight: 400;
+            font-size: 0.875rem;
+            line-height: 1.063rem;
+            text-align: center;
+            color: rgba(0, 0, 0, 0.4);
+        }
+    }
+
+    .right_pane {
+        background-image: url('../../Assets/Images/signupbgimg.png');
+        height: 100vh;
+        background-position-y: top;
+
+        .right_pane_text {
+            @media (max-width: 600px) {
+                font-family: 'Poppins';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 1rem;
+                line-height: 2.25rem;
+                margin-left: 1rem;
+            }
+
+            font-family: 'Poppins';
+            font-style: normal;
+            font-size: 1.25rem;
+            line-height: 2.25rem;
+            color: #000000;
+            position: absolute;
+            top: 10%;
+            // right: 32%;
+        }
+    }
+}

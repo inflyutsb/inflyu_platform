@@ -1,0 +1,443 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    overflow: hidden;
+    height: 100%;
+}
+
+.calculate_2_container {
+    display: flex;
+
+    .middle_pane_calculate {
+        // @media (max-width: 1280px) {
+        overflow-y: auto;
+        height: 100vh;
+        // }
+
+        background: #F8F8F8;
+
+        .middle_pane_content {
+            background: #FFFFFF;
+            border: 0.063rem solid rgba(0, 0, 0, 0.2);
+            border-radius: 0.313rem;
+            // height: 38rem;
+            margin: 2rem;
+            display: flex;
+
+            .steps_pane {
+                @media (max-width: 500px) {
+                    display: none;
+                }
+
+                .steps_pane_part {
+                    background: #fff;
+                    border-left: solid 0.313rem #357AFF;
+                    border-radius: 0.063rem;
+                    border-right: solid 0.125rem #D9D9D9;
+                    padding: 1rem 2.25rem 0.438rem;
+                    border-bottom: 0.063rem solid #CCCCCC;
+
+                    .steps_pane_title {
+                        font-family: 'Noto Sans';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 0.875rem;
+                        line-height: 1.188rem;
+                        color: rgba(0, 0, 0, 0.6)
+                    }
+
+                    .followers_title {
+                        font-family: 'Noto Sans';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 0.875rem;
+                        line-height: 1.188rem;
+                        color: rgba(0, 0, 0, 0.6);
+                        padding-top: 0.5rem;
+                    }
+
+                    .followers_count {
+                        font-family: 'Noto Sans';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 1.25rem;
+                        line-height: 1.688rem;
+                        color: #000000;
+                    }
+
+                    .budget_influencers_title {
+                        font-family: 'Noto Sans';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 0.875rem;
+                        line-height: 1.188rem;
+                        color: rgba(0, 0, 0, 0.6);
+                        padding-top: 0.625rem;
+                    }
+
+                    .budget_influencers_value {
+                        font-family: 'Noto Sans';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 1.25rem;
+                        line-height: 1.688rem;
+                        color: #000000;
+                        padding-left: 0.625rem;
+                    }
+
+                    .deliverables {
+                        display: flex;
+                        justify-content: space-between;
+
+                        .deliverables_value {
+                            font-family: 'Noto Sans';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 1.5rem;
+                            color: #000000;
+                        }
+
+                        .deliverables_title {
+                            font-family: 'Noto Sans';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 0.688rem;
+                            line-height: 0.938rem;
+                            max-width: 1.875rem;
+                            color: rgba(0, 0, 0, 0.6);
+                        }
+                    }
+
+                    .filter_pane {
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        padding: 0.313rem 0 0.25rem;
+
+                        .filter_value {
+                            font-family: 'Noto Sans';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 1.25rem;
+                            line-height: 1.688rem;
+                            color: #000000;
+                            padding-left: 1rem;
+                        }
+                    }
+
+                    .cost_title {
+                        padding: 1.563rem 0 0.125rem;
+                        font-family: 'Noto Sans';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 0.875rem;
+                        line-height: 1.188rem;
+                        color: rgba(0, 0, 0, 0.6);
+                    }
+
+                    .cost_title {
+                        padding: 1.563rem 0 0.125rem;
+                        font-family: 'Noto Sans';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 0.875rem;
+                        line-height: 1.188rem;
+                        color: rgba(0, 0, 0, 0.6);
+                    }
+
+                    .cost_value {
+                        padding: 0 0 1rem;
+                        font-family: 'Noto Sans';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 1.25rem;
+                        line-height: 1.688rem;
+                        color: #000000;
+                    }
+                }
+
+                .steps_pane_part_inactive {
+                    // height: 9.5rem;
+                    background: #D9D9D9;
+                    // padding: 1rem 2.25rem 0.438rem;
+                    border-left: solid 0.313rem #B6B6B6;
+                    border-radius: 0.063rem;
+                    border-right: solid 0.125rem #D9D9D9;
+                    border-bottom: 0.063rem solid #CCCCCC;
+                    padding: 2.25rem 2.25rem;
+
+                    .steps_pane_title {
+                        font-family: 'Noto Sans';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 0.875rem;
+                        line-height: 1.188rem;
+                        color: rgba(0, 0, 0, 0.6)
+                    }
+
+                    .followers_title {
+                        font-family: 'Noto Sans';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 0.875rem;
+                        line-height: 1.188rem;
+                        color: rgba(0, 0, 0, 0.6);
+                        padding-top: 0.5rem;
+                    }
+
+                    .followers_count {
+                        font-family: 'Noto Sans';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 1.25rem;
+                        line-height: 1.688rem;
+                        color: #000000;
+                    }
+
+                    .budget_influencers_title {
+                        font-family: 'Noto Sans';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 0.875rem;
+                        line-height: 1.188rem;
+                        color: rgba(0, 0, 0, 0.6);
+                        padding-top: 0.625rem;
+                    }
+
+                    .budget_influencers_value {
+                        font-family: 'Noto Sans';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 1.25rem;
+                        line-height: 1.688rem;
+                        color: #000000;
+                    }
+
+                    .deliverables {
+                        display: flex;
+                        justify-content: space-between;
+
+                        .deliverables_value {
+                            font-family: 'Noto Sans';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 1.5rem;
+                            color: #000000;
+                        }
+
+                        .deliverables_title {
+                            font-family: 'Noto Sans';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 0.688rem;
+                            line-height: 0.938rem;
+                            max-width: 1.875rem;
+                            color: rgba(0, 0, 0, 0.6);
+                        }
+                    }
+
+                    .filter_pane {
+                        display: flex;
+                        justify-content: flex-start;
+                        align-items: center;
+                        padding: 0.313rem 0 0.25rem;
+
+                        .filter_value {
+                            font-family: 'Noto Sans';
+                            font-style: normal;
+                            font-weight: 600;
+                            font-size: 1.25rem;
+                            line-height: 1.688rem;
+                            color: #000000;
+                            padding-left: 1rem;
+                        }
+                    }
+
+                    .cost_title {
+                        padding: 1.563rem 0 0.125rem;
+                        font-family: 'Noto Sans';
+                        font-style: normal;
+                        font-weight: 700;
+                        font-size: 0.875rem;
+                        line-height: 1.188rem;
+                        color: rgba(0, 0, 0, 0.6);
+                    }
+
+                    .cost_value {
+                        padding: 0 0 1rem;
+                        font-family: 'Noto Sans';
+                        font-style: normal;
+                        font-weight: 600;
+                        font-size: 1.25rem;
+                        line-height: 1.688rem;
+                        color: #000000;
+                    }
+                }
+            }
+
+            .content_pane {
+                display: flex;
+                flex-direction: column;
+                padding: 1rem 2rem;
+
+                .step_title {
+                    font-family: 'Noto Sans';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 1.5rem;
+                    line-height: 2.063rem;
+                    color: #000000;
+                    width: 100%;
+                }
+
+                .step_count {
+                    font-family: 'Noto Sans';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 0.875rem;
+                    line-height: 1.188rem;
+                    color: rgba(0, 0, 0, 0.7);
+                    padding-top: 0.5rem;
+                    width: 100%;
+                }
+
+                .step_desc {
+                    font-family: 'Noto Sans';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 1rem;
+                    line-height: 1.375rem;
+                    color: #000000;
+                    // width: 22.5rem;
+                    width: 100%;
+                    padding-top: 1.5rem;
+                }
+
+                .deliverables_box {
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+                    margin-top: 0.5rem;
+
+                    .deliverables_value {
+                        display: flex;
+                        background: #FFFFFF;
+                        border: 0.063rem solid rgba(0, 0, 0, 0.5);
+                        border-radius: 0.313rem;
+                        width: 9.625rem;
+                        height: 2.25rem;
+                        align-items: center;
+                        cursor: pointer;
+                    }
+                }
+
+                .next_btn {
+                    background: #7662DC;
+                    border-radius: 0.188rem;
+                    font-family: 'Noto Sans';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 0.75rem;
+                    line-height: 1rem;
+                    text-align: center;
+                    color: #FFFFFF;
+                    width: 7.75rem;
+                    height: 2.25rem;
+                    margin-top: 2rem;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .right_pane {
+        @media (max-width: 900px) {
+            display: none;
+        }
+
+        @media (width: 1024px) {
+            display: none;
+        }
+
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+
+        .image1 {
+            background-image: url('../../../Assets/Images/step2bg.png');
+            height: 45vh;
+            background-repeat: no-repeat;
+            margin-top: 2rem;
+            background-size: contain;
+        }
+
+        .image2 {
+            height: 25vh;
+            background-image: url('../../../Assets/Images/calculate2.png');
+            background-repeat: no-repeat;
+            background-size: contain;
+            margin-top: 4rem;
+        }
+
+        .indicator {
+            font-family: 'Noto Sans';
+            font-style: normal;
+            font-weight: 700;
+            font-size: 0.75rem;
+            line-height: 1rem;
+            color: rgba(0, 0, 0, 0.3);
+        }
+    }
+}
+
+.col-lg-2 {
+    @media (min-width: 992px) {
+        -ms-flex: 0 0 16.666667%;
+        flex: 0 0 16.666667%;
+        max-width: 12.666667%;
+    }
+
+    height: 100vh;
+}
+
+// .col-md-2 {
+//     @media (min-width: 768px) {
+//         -ms-flex: 0 0 16.666667%;
+//         flex: 0 0 16.666667%;
+//         max-width: 12.666667%;
+//     }
+// }
+
+// .col-sm-2 {
+//     @media (min-width: 576px) {
+//         -ms-flex: 0 0 16.666667%;
+//         flex: 0 0 16.666667%;
+//         max-width: 12.666667%;
+//     }
+// }
+
+.col-lg-10 {
+    @media (min-width: 992px) {
+        -ms-flex: 0 0 87.333333%;
+        flex: 0 0 87.333333%;
+        max-width: 87.333333%;
+    }
+}
+
+// .col-md-10 {
+//     @media (min-width: 768px) {
+//         -ms-flex: 0 0 87.333333%;
+//         flex: 0 0 87.333333%;
+//         max-width: 87.333333%;
+//     }
+// }
+
+// .col-sm-10 {
+//     @media (min-width: 576px) {
+//         -ms-flex: 0 0 87.333333%;
+//         flex: 0 0 87.333333%;
+//         max-width: 87.333333%;
+//     }
+// }

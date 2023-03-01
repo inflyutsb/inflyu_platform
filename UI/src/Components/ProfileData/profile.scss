@@ -1,0 +1,596 @@
+body,
+html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.profile_container_box {
+    display: flex;
+    height: 100vh;
+
+    .profile_container {
+        display: flex;
+        overflow-y: auto;
+        height: 100vh;
+        margin: 0;
+        background-color: #FFF;
+        padding-bottom: 2rem;
+
+        .profile_header {
+            padding: 2rem;
+            display: flex;
+            flex-direction: column;
+
+            .input_box_influencer {
+                padding: 0rem 0rem 0.75rem 0.5rem;
+                position: relative;
+
+                input {
+                    background: #FFFFFF;
+                    border: 0.063rem solid rgba(0, 0, 0, 0.2);
+                    border-radius: 0.313rem;
+                    box-sizing: border-box;
+                    height: 3rem;
+                    font-family: 'Noto Sans';
+                    font-style: italic;
+                    font-weight: 400;
+                    font-size: 0.75rem;
+                    line-height: 1rem;
+                    color: rgba(0, 0, 0, 0.2);
+                    padding-left: 1rem;
+                    width: 100%;
+                }
+
+                svg {
+                    position: absolute;
+                    right: 2rem;
+                    top: 1rem;
+                    cursor: pointer;
+                }
+            }
+
+            .profile_pic {
+                .profile_image {
+                    width: 100%;
+                    border-radius: 50%;
+                }
+
+                // width: 5rem;
+            }
+
+            .profile_basic_info {
+                @media (max-width: 500px) {
+                    padding-top: 1rem;
+                }
+
+                // margin-left: 15rem;
+                padding-left: 1rem;
+
+                .profile_username {
+                    @media (max-width: 768px) {
+                        font-size: 0.8rem;
+                    }
+
+                    @media (max-width: 400px) {
+                        font-size: 0.6rem;
+                    }
+
+                    font-family: 'Noto Sans';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 1.125rem;
+                    line-height: 1.188rem;
+                    color: rgba(0, 0, 0, 0.6);
+                    cursor: pointer;
+                }
+
+                .profile_name {
+                    @media (max-width: 768px) {
+                        font-size: 1rem;
+                    }
+
+                    @media (max-width: 400px) {
+                        font-size: 0.8rem;
+                    }
+
+                    padding-bottom: 1rem;
+                    font-family: 'Noto Sans';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 1.5rem;
+                    line-height: 2.063rem;
+                    color: #000000;
+                }
+
+                .profile_user_location {
+                    @media (max-width: 768px) {
+                        font-size: 0.8rem;
+                    }
+
+                    @media (max-width: 400px) {
+                        font-size: 0.6rem;
+                    }
+
+                    font-family: 'Noto Sans';
+                    font-style: normal;
+                    font-weight: 500;
+                    font-size: 1.125rem;
+                    line-height: 1.188rem;
+                    color: RGB(0, 0, 0, 0.8);
+                    margin-top: 1rem;
+                }
+
+                .profile_category {
+                    background: #4D38B9;
+                    border-radius: 0.188rem;
+                    font-family: 'Noto Sans';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 0.75rem;
+                    line-height: 1rem;
+                    text-align: center;
+                    color: #FFFFFF;
+                    padding: 0.5rem;
+                    margin-top: 1rem;
+                    width: fit-content;
+                }
+
+                .addList_section {
+                    max-height: 21.875rem;
+                    position: absolute;
+                    z-index: 4;
+                    padding: 0.75rem;
+                    background: #FFFFFF;
+                    border: 0.063rem solid RGB(0, 0, 0, 0.2);
+                    box-shadow: 0.125rem 0.25rem 0.25rem RGB(0 0 0 / 25%);
+                    border-radius: 0.313rem;
+                    // top: 34%;
+                    // left: 33%;
+
+                    .addList_option {
+                        max-height: 21.375rem;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        padding: 0.625rem;
+                        border-radius: 0.5rem;
+                        cursor: pointer;
+
+                        .section_dropdown_header {
+                            font-family: 'Noto Sans';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 1rem;
+                            line-height: 1.375rem;
+                            color: #000000;
+                        }
+
+                        .section_list_title {
+                            font-family: 'Noto Sans';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 0.875rem;
+                            line-height: 1.188rem;
+                            color: rgba(0, 0, 0, 0.7);
+                            margin-top: 0.5rem;
+                        }
+
+                        .list_options {
+                            font-family: 'Inter';
+                            font-style: normal;
+                            font-weight: 400;
+                            font-size: 1rem;
+                            line-height: 1.188rem;
+                            color: rgba(0, 0, 0, 0.8);
+                            padding-top: 0.5rem;
+                            padding-bottom: 0.5rem;
+                        }
+                    }
+                }
+
+                .add_list_btn {
+                    background: #7662DC;
+                    border-radius: 0.188rem;
+                    font-family: 'Noto Sans';
+                    font-style: normal;
+                    font-weight: 700;
+                    font-size: 0.75rem;
+                    line-height: 1rem;
+                    text-align: center;
+                    color: #FFFFFF;
+                    margin-top: 1rem;
+                    padding: 0.5rem 1.813rem;
+                }
+            }
+
+            .profile_info_bar {
+                padding-top: 3rem;
+
+                .profile_info_bar_collection {
+                    display: flex;
+                    justify-content: space-between;
+
+                    .detail_box {
+                        @media (max-width: 1000px) {
+                            padding-top: 0.8rem;
+                        }
+
+                        margin: 0 0.8rem;
+                        display: flex;
+                        flex-direction: column;
+                        /* align-content: center; */
+                        align-items: center;
+
+                        span {
+                            margin: 0;
+                            padding: 0;
+                        }
+
+                        .profile_result_value {
+                            font-family: 'Noto Sans';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 1.5rem;
+                            line-height: 2.063rem;
+                            display: flex;
+                            align-items: flex-end;
+                            text-align: center;
+                            color: #000000;
+                        }
+
+                        .labels {
+                            font-family: 'Noto Sans';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 0.875rem;
+                            line-height: 1rem;
+                            display: flex;
+                            align-items: flex-end;
+                            text-align: center;
+                            color: rgba(0, 0, 0, 0.6);
+                            margin-left: 0;
+                        }
+                    }
+
+                }
+
+                .profile_demography {
+                    padding: 2rem 0rem;
+
+                    .demography_title {
+                        font-family: 'Noto Sans';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 1.25rem;
+                        line-height: 1.688rem;
+                        color: #000000;
+                    }
+
+                    .growth_rates_box {
+                        padding-top: 1rem;
+                        padding-left: 2rem;
+                        font-family: 'Noto Sans';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 1rem;
+                        line-height: 1.188rem;
+                        color: rgba(0, 0, 0, 0.6);
+                        cursor: pointer;
+                        display: flex;
+
+                        .growth_rate_line {
+
+                            span {
+                                padding: 0;
+                                margin: 0;
+                            }
+
+                            div {
+                                display: flex;
+                                align-items: center;
+
+                                .title_growth {
+                                    margin: 0;
+                                    padding-top: 0.8rem;
+                                    padding-bottom: 0.25rem;
+                                    padding-left: 1rem;
+                                }
+
+                                .indicator1 {
+                                    height: 1rem;
+                                    width: 1rem;
+                                    background-color: rgb(124, 181, 236);
+                                    margin-top: 0.8rem;
+                                    border-radius: 50%;
+                                }
+
+                                .indicator2 {
+                                    height: 1rem;
+                                    width: 1rem;
+                                    background-color: rgb(67, 67, 72);
+                                    margin-top: 0.8rem;
+                                    border-radius: 50%;
+                                }
+
+                                .indicator3 {
+                                    height: 1rem;
+                                    width: 1rem;
+                                    background-color: rgb(144, 237, 125);
+                                    margin-top: 0.8rem;
+                                    border-radius: 50%;
+                                }
+                            }
+
+                            .values {
+                                padding-left: 2rem;
+                            }
+
+                            display: flex;
+                            flex-direction: column;
+                            align-items: flex-start;
+                            // min-width: 8rem;
+                        }
+                    }
+                }
+            }
+        }
+
+        .profile_posts {
+            @media (max-width: 500px) {
+                padding: 0.1rem;
+            }
+
+            padding: 2rem;
+            text-align: center;
+
+            .recent_posts_title {
+                font-family: 'Noto Sans';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 1.25rem;
+                line-height: 1.688rem;
+                color: #000000;
+            }
+
+            .image1 {
+                padding: 1rem;
+                display: flex;
+
+                .recent_post_preview {
+                    height: 8rem;
+                    width: 8rem;
+                    border-radius: 50%;
+                    object-fit: contain;
+                    border: 1px solid #eeeeee;
+                    box-shadow: 1px 1px 1px #ccc;
+                }
+
+                .like_comment_view_box {
+                    display: flex;
+                    flex-direction: column;
+                    align-content: flex-start;
+                    justify-content: space-around;
+                    padding-left: 1rem;
+
+                    img {
+                        height: 1.25rem;
+                    }
+
+                    .value_box {
+                        font-family: 'Noto Sans';
+                        font-style: normal;
+                        font-weight: 500;
+                        font-size: 1rem;
+                        line-height: 1.375rem;
+                        display: flex;
+                        align-items: center;
+                        text-align: center;
+                        color: #000000;
+                        justify-content: space-between;
+
+                        .like_comment_value {
+                            font-family: 'Noto Sans';
+                            font-style: normal;
+                            font-weight: 500;
+                            font-size: 1rem;
+                            line-height: 1.375rem;
+                            display: flex;
+                            align-items: flex-end;
+                            text-align: center;
+                            color: #000000;
+                        }
+                    }
+                }
+            }
+
+            .growth_rates_box {
+                padding-top: 1rem;
+                padding-left: 2rem;
+                font-family: 'Noto Sans';
+                font-style: normal;
+                font-weight: 500;
+                font-size: 1rem;
+                line-height: 1.188rem;
+                color: rgba(0, 0, 0, 0.6);
+                cursor: pointer;
+
+                .growth_rate_line {
+                    @media (max-width: 1000px) {
+                        display: none;
+                    }
+
+                    span {
+                        padding: 0;
+                        margin: 0;
+                    }
+
+                    div {
+                        display: flex;
+                        align-items: center;
+
+                        .title_growth {
+                            margin: 0;
+                            padding-top: 0.8rem;
+                            padding-bottom: 0.25rem;
+                            padding-left: 1rem;
+                        }
+
+                        .indicator1 {
+                            height: 1rem;
+                            width: 1rem;
+                            background-color: rgb(124, 181, 236);
+                            margin-top: 0.8rem;
+                            border-radius: 50%;
+                        }
+
+                        .indicator2 {
+                            height: 1rem;
+                            width: 1rem;
+                            background-color: rgb(67, 67, 72);
+                            margin-top: 0.8rem;
+                            border-radius: 50%;
+                        }
+
+                        .indicator3 {
+                            height: 1rem;
+                            width: 1rem;
+                            background-color: rgb(144, 237, 125);
+                            margin-top: 0.8rem;
+                            border-radius: 50%;
+                        }
+                    }
+
+                    .values {
+                        padding-left: 2rem;
+                    }
+
+                    display: flex;
+                    flex-direction: column;
+                    align-items: flex-start;
+                    // min-width: 8rem;
+                }
+            }
+        }
+
+    }
+}
+
+.col-lg-2 {
+    @media (min-width: 992px) {
+        -ms-flex: 0 0 16.666667%;
+        flex: 0 0 16.666667%;
+        max-width: 12.666667%;
+    }
+}
+
+// .col-md-2 {
+//     @media (min-width: 768px) {
+//         -ms-flex: 0 0 16.666667%;
+//         flex: 0 0 16.666667%;
+//         max-width: 12.666667%;
+//     }
+// }
+
+// .col-sm-2 {
+//     @media (min-width: 576px) {
+//         -ms-flex: 0 0 16.666667%;
+//         flex: 0 0 16.666667%;
+//         max-width: 12.666667%;
+//     }
+// }
+
+.col-lg-10 {
+    @media (min-width: 992px) {
+        -ms-flex: 0 0 87.333333%;
+        flex: 0 0 87.333333%;
+        max-width: 87.333333%;
+    }
+}
+
+// .col-md-10 {
+//     @media (min-width: 768px) {
+//         -ms-flex: 0 0 87.333333%;
+//         flex: 0 0 87.333333%;
+//         max-width: 87.333333%;
+//     }
+// }
+
+// .col-sm-10 {
+//     @media (min-width: 576px) {
+//         -ms-flex: 0 0 87.333333%;
+//         flex: 0 0 87.333333%;
+//         max-width: 87.333333%;
+//     }
+// }
+.inline_loader {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.highcharts-credits {
+    display: none;
+}
+
+.suggestions_influencer {
+    background: #FFFFFF;
+    border: 0.063rem solid RGB(0, 0, 0, 0.2);
+    box-shadow: 0 0.25rem 0.25rem RGB(0 0 0 / 25%);
+    border-radius: 0.313rem;
+    width: 100%;
+    max-height: 15rem;
+    position: absolute;
+    z-index: 9999;
+    top: 3rem;
+    overflow-y: auto;
+
+    .active_influencer {
+        margin-left: 1rem;
+        font-family: 'Noto Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.188rem;
+        color: rgba(0, 0, 0, 0.7);
+        cursor: pointer;
+
+        .sug_user {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            img {
+                height: 2rem;
+                width: 2rem;
+                border-radius: 50%;
+            }
+        }
+    }
+
+    div {
+        margin-left: 0.5rem;
+        font-family: 'Noto Sans';
+        font-style: normal;
+        font-weight: 500;
+        font-size: 1rem;
+        line-height: 1.188rem;
+        color: rgba(0, 0, 0, 0.7);
+        cursor: pointer;
+        padding: 0.2rem 0rem;
+        padding-left: 0;
+
+        .sug_user {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+
+            img {
+                height: 2rem;
+                width: 2rem;
+                border-radius: 50%;
+            }
+        }
+    }
+}
